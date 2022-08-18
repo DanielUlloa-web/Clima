@@ -1,38 +1,54 @@
-body * {
+body {
   margin: 0;
   padding: 0;
   font-size: 100%;
-
 }
 
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
 
 section #climaHoy {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 #ciudad {
-    font-size: 32px;
-    font-weight: bold;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 #temperaturaActual {
-    font-size: 48px;
-    font-weight: bold;
+  font-size: 48px;
+  font-weight: bold;
 }
 
 #clima {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 #minMax {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-section #detalle{
-    border: 1px solid black;
-    font-size: 20px;
-    
+section #detalle {
+  border: 1px solid black;
+  font-size: 28px;
+  width: 100%;
+}
+
+section #climaSemana {
+  border: 1px solid black;
+}
+
+section {
+  border: 1px solid aqua;
+}
+
+.equal, .equal > div[class*='col-'] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex:1 1 auto;
 }

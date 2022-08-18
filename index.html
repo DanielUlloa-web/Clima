@@ -40,24 +40,51 @@
 
       <main id="main">
         <!-- ============================================ -->
-        <!--                  CLIMA CIUDAD                -->
+        <!--           CLIMA CIUDAD Y DETALLE             -->
         <!-- ============================================ -->
 
-        <section id="hero" class="container row m-auto">
-            <div id="climaHoy" class="mt-5 container col-7">
-                <p id="ciudad">Santiago, RM Apartir de las 14:11 CLT</p>
-                <p id="temperaturaActual">11°</p>
-                <p id="clima">Nublado</p>
-                <p id="minMax">Max 12° - Min 6°</p>
-            </div>
-            <div id="detalle" class="mt-5 col-4">
-                <ul class="my-2">
-                    <li>Humedad         <span>5</span></li>
-                    <li>Presión         <span>5</span></li>
-                    <li>Visibilidad     <span>5</span></li>
-                    <li>Viento          <span>5</span></li>
-                    <li>Indice UV       <span>5</span></li>
-                </ul>
+        <section id="hero" class="container vstack gap-6 p-0 my-5" >
+            <div class="row g-6 equal">
+              <!-- clima ciudad  -->
+                <div class="col-xl-8 col-md-7 col-12">
+                    <div id="climaHoy">
+                        <p id="ciudad">Santiago, RM Apartir de las 14:11 CLT</p>
+                        <p id="temperaturaActual">11°</p>
+                        <p id="clima">Nublado</p>
+                        <p id="minMax">Max 12° - Min 6°</p>
+                    </div>
+                </div>
+              <!-- detalle  -->
+                <div class="col-xl-4 col-md-5 col-12">
+                    <div id="detalle" class="vstack">
+                      <div class="row">
+                        <p class="col mx-3">Humedad</p>
+                        <p class="col-auto mx-3">5</p>
+                      </div>
+
+                      <div class="row">
+                        <p class="col mx-3">Humedad</p>
+                        <p class="col-auto mx-3">5</p>
+                      </div>
+
+                      <div class="row">
+                        <p class="col mx-3">Humedad</p>
+                        <p class="col-auto mx-3">5</p>
+                      </div>
+
+                      <div class="row">
+                        <p class="col mx-3">Humedad</p>
+                        <p class="col-auto mx-3">5</p>
+                      </div>
+
+                      <div class="row">
+                        <p class="col mx-3">Humedad</p>
+                        <p class="col-auto mx-3">5</p>
+                      </div>
+
+                    </div>
+                </div>
+
             </div>
 
         </section>
@@ -66,10 +93,7 @@
         <!--                  CLIMA DIARIO                -->
         <!-- ============================================ -->
 
-        <section id="climaDiario" class="container">
 
-
-        </section>
 
       </main>
 
