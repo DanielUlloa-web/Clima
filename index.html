@@ -11,15 +11,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/df7b74642f.js" crossorigin="anonymous"></script>
     <title>Document</title>
   </head>
   <body>
     <!-- ============================================ -->
     <!--                 Navigation                   -->
     <!-- ============================================ -->
-    <nav class="navbar navbar-expand-lg bg-light" style="width: 100%;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg bg-dark" style="width: 100%;">
+      <div class="container">
+        <a class="navbar-brand text-light" href="#">Tiempox</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -32,18 +33,18 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link text-light" href="#">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link text-light" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link disabled text-light">Disabled</a>
             </li>
           </ul>
         </div>
@@ -63,7 +64,7 @@
             <div id="climaHoy">
               <p id="ciudad" class="ps-2">Santiago, RM Apartir de las 14:11 CLT</p>
               <p id="temperaturaActual" class="ps-2">11°</p>
-              <p id="clima" class="ps-2">Nublado</p>
+              <p id="clima" class="ps-2">Soleado</p>
               <p id="minMax" class="ps-2">Max 12° - Min 6°</p>
             </div>
           </div>
@@ -72,22 +73,22 @@
             <div id="detalle" class="vstack">
 
               <div class="row">
-                <p class="col mx-3">Humedad</p>
+                <p class="col mx-3"><img src="./dist/svg/droplet-solid.svg" alt="" class="icon"> Humedad</p>
                 <p class="col-auto mx-3">5</p>
               </div>
 
               <div class="row">
-                <p class="col mx-3">Humedad</p>
+                <p class="col mx-3"><img src="./dist/svg/arrow-down-short-wide-solid.svg" alt="" class="icon"> Presión</p>
                 <p class="col-auto mx-3">5</p>
               </div>
 
               <div class="row">
-                <p class="col mx-3">Humedad</p>
+                <p class="col mx-3"><img src="./dist/svg/wind-solid.svg" alt="" class="icon"> Viento</p>
                 <p class="col-auto mx-3">5</p>
               </div>
 
               <div class="row">
-                <p class="col mx-3">Humedad</p>
+                <p class="col mx-3"><img src="./dist/svg/sun-plant-wilt-solid.svg" alt="" class="icon"> Índice UV</p>
                 <p class="col-auto mx-3">5</p>
               </div>
             </div>
@@ -97,16 +98,16 @@
       </section>
 
       <section class="container gap-6 p-0 my-5 px-3 px-md-0">
-        <div class="card-group">
+        <div class="card-group gap-2">
 
-          <div class="card mx-auto" style="">
+          <div class="card mx-auto">
             <div class="card-header">
-              Featured
+              Hoy
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">23°</li>
+              <li class="list-group-item">8°</li>
+              <li class="list-group-item">Icono</li>
             </ul>
           </div>
 

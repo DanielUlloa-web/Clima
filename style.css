@@ -2,6 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-size: 100%;
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+nav {
+  color: white;
 }
 
 ul {
@@ -9,36 +14,58 @@ ul {
 }
 
 section #climaHoy {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   width: 100%;
+  background-image: url(./dist/img/924597-sunny-day-background-1920x1200-image.jpg);
+  border-radius: 15px;
+  height: 100%;
+  box-shadow: 2px 2px 3px;
 }
 
 #ciudad {
   font-size: 32px;
   font-weight: bold;
+  text-shadow: 1px 1px white;
 }
 
 #temperaturaActual {
   font-size: 48px;
   font-weight: bold;
+  text-shadow: 1px 1px white;
 }
 
 #clima {
   font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px white;
 }
 
 #minMax {
   font-size: 16px;
+  font-weight: bold;
+  text-shadow: 1px 1px white;
 }
 
 section #detalle {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   font-size: 28px;
   width: 100%;
   height: 100%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 3px;
+  background-color: white;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 2px 2px 3px;
+}
+
+.icon{
+  width: 20px;
+  color: black;
 }
 
 section {
-  border: 1px solid aqua;
+  /*border: 1px solid aqua;*/
 }
-
