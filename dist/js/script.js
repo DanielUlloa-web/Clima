@@ -9,7 +9,7 @@ const options = {
 let clima = {
   fetchClima: function (ciudad) {
     fetch(
-      "https://weatherapi-com.p.rapidapi.com/forecast.json?q=Calama&days=3",
+      "https://weatherapi-com.p.rapidapi.com/forecast.json?q="+ciudad+"&days=3",
       options
     )
       .then((response) => response.json())
@@ -59,32 +59,40 @@ let clima = {
     );*/
     /*console.log(dia0, dia1, dia2);*/
     /*console.log(hora)*/
-    let hora = last_updated.slice(11)
-    let dia1Fecha = 
+    let hora = last_updated.slice(11);
+    let dia1Fecha = (document.getElementById(
+      "ciudad"
+    ).innerText = `${name}, ${region} Apartir de las ${hora}`);
+    document.getElementById("temperaturaActual").innerText = `${temp_c}°`;
+    document.getElementById(
+      "minMax"
+    ).innerText = `Max ${dia0[1]}° - Min ${dia0[2]}°`;
 
-    document.getElementById("ciudad").innerText = `${name}, ${region} Apartir de las ${hora}`
-    document.getElementById("temperaturaActual").innerText = `${temp_c}°`
-    document.getElementById("minMax").innerText = `Max ${dia0[1]}° - Min ${dia0[2]}°`
+    document.getElementById("humedad").innerText = `${humidity}%`;
+    document.getElementById("presion").innerText = `${pressure_mb} mb`;
+    document.getElementById("viento").innerText = `${wind_kph} km/h`;
+    document.getElementById("uv").innerText = `${uv} de 10`;
 
-    document.getElementById("humedad").innerText = `${humidity}%`
-    document.getElementById("presion").innerText = `${pressure_mb} mb`
-    document.getElementById("viento").innerText = `${wind_kph} km/h`
-    document.getElementById("uv").innerText =`${uv} de 10`
+    document.getElementById("maxHoy").innerText = `${dia0[1]}°`;
+    document.getElementById("minHoy").innerText = `${dia0[2]}°`;
+    document.getElementById("iconoHoy").src = `${dia0[3]}`;
 
-    document.getElementById("maxHoy").innerText = `${dia0[1]}°`
-    document.getElementById("minHoy").innerText = `${dia0[2]}°`
-    document.getElementById("iconoHoy").src = `${dia0[3]}`
+    document.getElementById("dia1").innerText = `${dia1[0]}`;
+    document.getElementById("dia1Max").innerText = `${dia1[1]}°`;
+    document.getElementById("dia1Min").innerText = `${dia1[2]}°`;
+    document.getElementById("iconoDia1").src = `${dia1[3]}`;
 
-    document.getElementById("dia1").innerText = `${dia1[0]}`
-    document.getElementById("dia1Max").innerText = `${dia1[1]}°`
-    document.getElementById("dia1Min").innerText = `${dia1[2]}°`
-    document.getElementById("iconoDia1").src = `${dia1[3]}`
-
-    document.getElementById("dia2").innerText = `${dia2[0]}`
-    document.getElementById("dia2Max").innerText = `${dia2[1]}°`
-    document.getElementById("dia2Min").innerText = `${dia2[2]}°`
-    document.getElementById("iconoDia2").src = `${dia2[3]}`
-
-
+    document.getElementById("dia2").innerText = `${dia2[0]}`;
+    document.getElementById("dia2Max").innerText = `${dia2[1]}°`;
+    document.getElementById("dia2Min").innerText = `${dia2[2]}°`;
+    document.getElementById("iconoDia2").src = `${dia2[3]}`;
+  },
+  search: function () {
+    this.fetchClima(document.querySelector(".form-control").value);
   },
 };
+
+document.querySelector(".btn").addEventListener("click", function (e) {
+  e.preventDefault();
+  clima.search();
+});
