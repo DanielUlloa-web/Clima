@@ -2,7 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-size: 100%;
-  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  background-image: url(../img/previsioni_meteo_pasqua_1920x600.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 nav {
@@ -13,6 +15,7 @@ ul {
   list-style-type: none;
 }
 
+
 ul .maxtemp{
   font-size: 30px;
   font-weight: bold;
@@ -22,34 +25,27 @@ ul .maxtemp{
 section #climaHoy {
   /*border: 1px solid black;*/
   width: 100%;
-  background-image: url(../img/924597-sunny-day-background-1920x1200-image.jpg);
   border-radius: 15px;
   height: 100%;
-  box-shadow: 2px 2px 3px;
+  background-color: #000000d0;
+  color: white;
 }
 
 #ciudad {
   font-size: 32px;
   font-weight: bold;
-  text-shadow: 1px 1px white;
 }
 
 #temperaturaActual {
   font-size: 52px;
-  font-weight: bold;
-  text-shadow: 1px 1px white;
 }
 
 #clima {
   font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px white;
 }
 
 #minMax {
   font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px white;
 }
 
 section #detalle {
@@ -58,17 +54,23 @@ section #detalle {
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  box-shadow: 2px 2px 3px;
-  background-color: white;
+  /*box-shadow: 2px 2px 3px;*/
+  background-color: #000000d0;
+  color: white;
 }
 
 .card {
-  border-radius: 15px;
-  box-shadow: 2px 2px 3px;
+  background-color: #000000d0;
+  color: white;
+}
+
+.card li{
+  color: white;
+  background: rgba(0, 0, 0, 0)
 }
 
 .icon{
   width: 20px;
-  color: black;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(16deg) brightness(108%) contrast(101%);
 }
 

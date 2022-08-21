@@ -46,7 +46,7 @@ let clima = {
       dia2.push(date, maxtemp_c, mintemp_c, icon);
     }
 
-    console.log(
+    /*console.log(
       name,
       region,
       country,
@@ -56,10 +56,11 @@ let clima = {
       pressure_mb,
       humidity,
       uv
-    );
-    console.log(dia0, dia1, dia2);
+    );*/
+    /*console.log(dia0, dia1, dia2);*/
+    /*console.log(hora)*/
     let hora = last_updated.slice(11)
-    console.log(hora)
+    let dia1Fecha = 
 
     document.getElementById("ciudad").innerText = `${name}, ${region} Apartir de las ${hora}`
     document.getElementById("temperaturaActual").innerText = `${temp_c}°`
@@ -70,6 +71,20 @@ let clima = {
     document.getElementById("viento").innerText = `${wind_kph} km/h`
     document.getElementById("uv").innerText =`${uv} de 10`
 
-    
+    document.getElementById("maxHoy").innerText = `${dia0[1]}°`
+    document.getElementById("minHoy").innerText = `${dia0[2]}°`
+    document.getElementById("iconoHoy").src = `${dia0[3]}`
+
+    document.getElementById("dia1").innerText = `${dia1[0]}`
+    document.getElementById("dia1Max").innerText = `${dia1[1]}°`
+    document.getElementById("dia1Min").innerText = `${dia1[2]}°`
+    document.getElementById("iconoDia1").src = `${dia1[3]}`
+
+    document.getElementById("dia2").innerText = `${dia2[0]}`
+    document.getElementById("dia2Max").innerText = `${dia2[1]}°`
+    document.getElementById("dia2Min").innerText = `${dia2[2]}°`
+    document.getElementById("iconoDia2").src = `${dia2[3]}`
+
+
   },
 };

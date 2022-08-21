@@ -34,8 +34,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <form class="d-flex mx-auto">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Ingrese ciudad" aria-label="Search">
+            <button class="btn btn-outline-dark btn-light " type="submit">Buscar</button>
           </form>
           </ul>
         </div>
@@ -64,29 +64,31 @@
 
               <div class="row">
                 <p class="col mx-3"><img src="./dist/svg/droplet-solid.svg" alt="" class="icon"> Humedad</p>
-                <p class="col-auto mx-3" id="humedad">5</p>
+                <p class="col-auto mx-3" id="humedad">-</p>
               </div>
 
               <div class="row">
                 <p class="col mx-3"><img src="./dist/svg/arrow-down-short-wide-solid.svg" alt="" class="icon"> Presión</p>
-                <p class="col-auto mx-3" id="presion">5</p>
+                <p class="col-auto mx-3" id="presion">-</p>
               </div>
 
               <div class="row">
                 <p class="col mx-3"><img src="./dist/svg/wind-solid.svg" alt="" class="icon"> Viento</p>
-                <p class="col-auto mx-3" id="viento">5</p>
+                <p class="col-auto mx-3" id="viento">-</p>
               </div>
 
               <div class="row">
                 <p class="col mx-3"><img src="./dist/svg/sun-plant-wilt-solid.svg" alt="" class="icon"> Índice UV</p>
-                <p class="col-auto mx-3" id="uv">5</p>
+                <p class="col-auto mx-3" id="uv">-</p>
               </div>
             </div>
           </div>
         </div>
 
       </section>
-
+      <!-- ============================================ -->
+      <!--           CLIMA SIGUIENTES DIAS              -->
+      <!-- ============================================ -->
       <section class="container gap-6 p-0 my-5 px-3 px-md-0">
         <div class="card-group gap-2">
 
@@ -95,31 +97,31 @@
               <h1>Hoy</h1>
             </div>
             <ul class="list-group list-group-flush text-center">
-              <li class="list-group-item maxtemp">23°</li>
-              <li class="list-group-item mintemp">8°</li>
-              <li class="list-group-item icontemp">Icono</li>
+              <li class="list-group-item maxtemp" id="maxHoy">-</li>
+              <li class="list-group-item mintemp" id="minHoy">-</li>
+              <li class="list-group-item icontemp"><img src="" alt="" id="iconoHoy"></li>
             </ul>
           </div>
 
           <div class="card mx-auto">
             <div class="card-header text-center">
-              <h1>Hoy</h1>
+              <h1 id="dia1">-</h1>
             </div>
             <ul class="list-group list-group-flush text-center">
-              <li class="list-group-item maxtemp">23°</li>
-              <li class="list-group-item mintemp">8°</li>
-              <li class="list-group-item icontemp">Icono</li>
+              <li class="list-group-item maxtemp" id="dia1Max">-</li>
+              <li class="list-group-item mintemp" id="dia1Min">-</li>
+              <li class="list-group-item icontemp"><img src="" alt="" id="iconoDia1"></li>
             </ul>
           </div>
 
           <div class="card mx-auto">
             <div class="card-header text-center">
-              <h1>Hoy</h1>
+              <h1 id="dia2">-</h1>
             </div>
             <ul class="list-group list-group-flush text-center">
-              <li class="list-group-item maxtemp">23°</li>
-              <li class="list-group-item mintemp">8°</li>
-              <li class="list-group-item icontemp">Icono</li>
+              <li class="list-group-item maxtemp" id="dia2Max">-</li>
+              <li class="list-group-item mintemp" id="dia2Min">-</li>
+              <li class="list-group-item icontemp"><img src="" alt="" id="iconoDia2"></li>
             </ul>
           </div>
 
@@ -128,7 +130,7 @@
     </main>
 
     <footer>
-
+      
     </footer>
 
     <script
