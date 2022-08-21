@@ -13,10 +13,16 @@ ul {
   list-style-type: none;
 }
 
+ul .maxtemp{
+  font-size: 30px;
+  font-weight: bold;
+  
+}
+
 section #climaHoy {
   /*border: 1px solid black;*/
   width: 100%;
-  background-image: url(./dist/img/924597-sunny-day-background-1920x1200-image.jpg);
+  background-image: url(../img/924597-sunny-day-background-1920x1200-image.jpg);
   border-radius: 15px;
   height: 100%;
   box-shadow: 2px 2px 3px;
@@ -29,7 +35,7 @@ section #climaHoy {
 }
 
 #temperaturaActual {
-  font-size: 48px;
+  font-size: 52px;
   font-weight: bold;
   text-shadow: 1px 1px white;
 }
@@ -41,7 +47,7 @@ section #climaHoy {
 }
 
 #minMax {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px white;
 }
@@ -66,6 +72,3 @@ section #detalle {
   color: black;
 }
 
-section {
-  /*border: 1px solid aqua;*/
-}

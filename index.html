@@ -10,7 +10,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
     <script src="https://kit.fontawesome.com/df7b74642f.js" crossorigin="anonymous"></script>
     <title>Document</title>
   </head>
@@ -33,19 +33,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled text-light">Disabled</a>
-            </li>
+          <form class="d-flex mx-auto">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
           </ul>
         </div>
       </div>
@@ -62,9 +53,8 @@
           <!-- clima ciudad  -->
           <div class="col-xl-7 col-md-7 col-12 mb-md-0 mb-4">
             <div id="climaHoy">
-              <p id="ciudad" class="ps-2">Santiago, RM Apartir de las 14:11 CLT</p>
-              <p id="temperaturaActual" class="ps-2">11°</p>
-              <p id="clima" class="ps-2">Soleado</p>
+              <h2 id="ciudad" class="ps-2">Santiago, RM Apartir de las 14:11 CLT</h2>
+              <h1 id="temperaturaActual" class="ps-2">11°</h1>
               <p id="minMax" class="ps-2">Max 12° - Min 6°</p>
             </div>
           </div>
@@ -74,22 +64,22 @@
 
               <div class="row">
                 <p class="col mx-3"><img src="./dist/svg/droplet-solid.svg" alt="" class="icon"> Humedad</p>
-                <p class="col-auto mx-3">5</p>
+                <p class="col-auto mx-3" id="humedad">5</p>
               </div>
 
               <div class="row">
                 <p class="col mx-3"><img src="./dist/svg/arrow-down-short-wide-solid.svg" alt="" class="icon"> Presión</p>
-                <p class="col-auto mx-3">5</p>
+                <p class="col-auto mx-3" id="presion">5</p>
               </div>
 
               <div class="row">
                 <p class="col mx-3"><img src="./dist/svg/wind-solid.svg" alt="" class="icon"> Viento</p>
-                <p class="col-auto mx-3">5</p>
+                <p class="col-auto mx-3" id="viento">5</p>
               </div>
 
               <div class="row">
                 <p class="col mx-3"><img src="./dist/svg/sun-plant-wilt-solid.svg" alt="" class="icon"> Índice UV</p>
-                <p class="col-auto mx-3">5</p>
+                <p class="col-auto mx-3" id="uv">5</p>
               </div>
             </div>
           </div>
@@ -101,57 +91,35 @@
         <div class="card-group gap-2">
 
           <div class="card mx-auto">
-            <div class="card-header">
-              Hoy
+            <div class="card-header text-center">
+              <h1>Hoy</h1>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">23°</li>
-              <li class="list-group-item">8°</li>
-              <li class="list-group-item">Icono</li>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item maxtemp">23°</li>
+              <li class="list-group-item mintemp">8°</li>
+              <li class="list-group-item icontemp">Icono</li>
             </ul>
           </div>
 
-          <div class="card mx-auto" style="">
-            <div class="card-header">
-              Featured
+          <div class="card mx-auto">
+            <div class="card-header text-center">
+              <h1>Hoy</h1>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item maxtemp">23°</li>
+              <li class="list-group-item mintemp">8°</li>
+              <li class="list-group-item icontemp">Icono</li>
             </ul>
           </div>
 
-          <div class="card mx-auto" style="">
-            <div class="card-header">
-              Featured
+          <div class="card mx-auto">
+            <div class="card-header text-center">
+              <h1>Hoy</h1>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
-          </div>
-
-          <div class="card mx-auto" style="">
-            <div class="card-header">
-              Featured
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
-          </div>
-
-          <div class="card mx-auto" style="">
-            <div class="card-header">
-              Featured
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item maxtemp">23°</li>
+              <li class="list-group-item mintemp">8°</li>
+              <li class="list-group-item icontemp">Icono</li>
             </ul>
           </div>
 
@@ -168,5 +136,6 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="./dist/js/script.js"></script>
   </body>
 </html>
